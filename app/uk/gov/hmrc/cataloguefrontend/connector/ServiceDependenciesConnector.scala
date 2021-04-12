@@ -108,7 +108,7 @@ class ServiceDependenciesConnector @Inject()(
     )
     http
       .GET[Seq[ServiceWithDependency]](
-         url"$servicesDependenciesBaseUrl/api/serviceDeps?$queryParams"
+         url"$servicesDependenciesBaseUrl/api/serviceDeps?$queryParams&scope=compile"
        )
    }
 
